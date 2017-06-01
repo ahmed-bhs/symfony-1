@@ -25,7 +25,7 @@
     "autoload": {
         "psr-4": {
             "Medooch\\Bundles\\": "Medooch/Bundles/",
-            "Medooch\\Component\\": "Medooch/Components/"
+            "Medooch\\Components\\": "Medooch/Components/"
         }
     }
 }
