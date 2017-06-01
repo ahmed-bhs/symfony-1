@@ -4,7 +4,7 @@
  */
 namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
-use Medooch\Components\Helper\Yaml\YamlManipulator;
+use Medooch\Components\Helper\Yml\YamlManipulator;
 use Components\Lib\Reverso\Spelling;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

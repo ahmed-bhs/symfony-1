@@ -25,7 +25,7 @@ Packages structure and features:
         - Request
         - Router
         - Security
-        - Yaml (Yaml Manipulator: Static methods that allow developers to Reading/Dumping yaml files)
+        - [Yml :](https://github.com/medooch/symfony/tree/master/Medooch/Components/Yml/README.md) (Yaml Manipulator: Static methods that allow developers to Reading/Dumping yaml files)
     2. Traits
         - IsActive (Add entity doctrine attribute isActive)
         - TreeLeftRightNested
@@ -43,7 +43,7 @@ Packages structure and features:
             - Frensh Spelling Checker
     
     5. extras:
-        - [Validator :](https://github.com/medooch/symfony/tree/master/Medooch/Components/Validator/README.md) ValidateClass to simply call symfony validator
+        - [Validator :](https://github.com/medooch/symfony/tree/master/Medooch/Components/Validator/README.md) Validate Class to simply call symfony validator
         
 
 

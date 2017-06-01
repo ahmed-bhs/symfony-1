@@ -4,7 +4,7 @@
  */
 
 namespace Medooch\Bundles\ExportBundle\Command;
-use Medooch\Components\Helper\Yaml\YamlManipulator;
+use Medooch\Components\Helper\Yml\YamlManipulator;
 use Sensio\Bundle\GeneratorBundle\Command\AutoComplete\EntitiesAutoCompleter;
 use Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineCrudCommand;
 use Sensio\Bundle\GeneratorBundle\Command\Validators;
