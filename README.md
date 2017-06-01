@@ -25,7 +25,7 @@ Packages structure and features:
         - Request
         - Router
         - Security
-        - [Yml :](https://github.com/medooch/symfony/tree/master/Medooch/Components/Yml/README.md) (Yaml Manipulator: Static methods that allow developers to Reading/Dumping yaml files)
+        - [Yml :](https://github.com/medooch/symfony/blob/master/Medooch/Components/Helper/Yml/README.md) (Yaml Manipulator: Static methods that allow developers to Reading/Dumping yaml files)
     2. Traits
         - IsActive (Add entity doctrine attribute isActive)
         - TreeLeftRightNested
