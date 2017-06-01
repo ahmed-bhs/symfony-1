@@ -19,7 +19,7 @@ use Symfony\Component\Validator\Validation;
  * Class Validate
  * @package Shared\Constraints
  */
-class Validate
+final class Validate
 {
     /**
      * ---------------------------------------
