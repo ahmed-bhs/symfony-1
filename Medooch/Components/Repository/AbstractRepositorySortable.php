@@ -1,0 +1,25 @@
+<?php
+/**
+ * This file is part of the Final-Safe.
+ * Created by trimechmehdi.
+ * Date: 5/18/17
+ * Time: 14:15
+ * @author: Mobelite <http://www.mobelite.fr/>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Components\Repository;
+
+use Components\Traits\RepositoryMethods;
+use Gedmo\Sortable\Entity\Repository\SortableRepository;
+
+/**
+ * Class AbstractRepositorySortable
+ * @package Components\Repository
+ */
+class AbstractRepositorySortable extends SortableRepository implements AbstractRepositoryInterface
+{
+    use RepositoryMethods;
+}

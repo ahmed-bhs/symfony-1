@@ -1,0 +1,39 @@
+services:
+
+    #    helpers
+    mailer.helper:
+        class: Components\Helper\Mailer\Mailer
+        arguments:
+            - '@service_container'
+
+    image.helper:
+        class: Components\Helper\Image\ImageHelper
+        arguments: ['@liip_imagine.cache.manager', '@liip_imagine.filter.configuration']
+
+    request.helper:
+        class: Components\Helper\Request\RequestHelper
+        arguments: ['@request_stack','%locale%']
+
+    security.helper:
+        class: Components\Helper\Security\SecurityHelper
+        arguments: ['@security.token_storage', '@request.helper']
+
+    router.helper:
+        class: Components\Helper\Router\RouterHelper
+        arguments: ['@router', '@request.helper']
+
+    #    Extensions
+    form.javascripts:
+            class: Components\Extensions\FormExtension
+            tags:
+                - { name: 'twig.extension' }
+            arguments:
+                - '@service_container'
+                - '@twig.form.renderer'
+
+    parameters.lib.twig_extension:
+        class: Components\Extensions\Parameters
+        tags:
+          - { name: twig.extension }
+        arguments:
+            - '@service_container'
