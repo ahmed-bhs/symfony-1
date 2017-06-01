@@ -8,10 +8,10 @@ Usage:
 ----
 
     use Symfony\Component\Validator\Constraints\EmailConstraint;
-    use Medooch\Components\Validator;
+    use Medooch\Components\Validator\Validate;
 
     $value = 'trimechmehdi11@gmail.com';
     $emailConstraint = EmailConstraint();
-    $violations = Validator::validate($value, $emailConstraint);
+    $violations = Validate::validate($value, $emailConstraint);
     
     var_dump($violations->count());

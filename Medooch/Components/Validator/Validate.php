@@ -1,10 +1,9 @@
 <?php
 /**
  * Copyright (c) 2017.
- */e.
  */
 
-namespace Components;
+namespace Medooch\Components\Validator;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Validation;
