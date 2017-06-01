@@ -2,11 +2,6 @@
 
 This Helper provide some static methods to manipulate yaml files.
 
-Install:
-----
-
-    composer require "medooch/yaml-manipulator:1.0.x-dev"
-
 Usage:
 ----
 
