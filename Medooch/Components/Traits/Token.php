@@ -11,7 +11,7 @@
  */
 
 namespace Medooch\Components\Traits;
-use Components\Helper\Helper;
+use Medooch\Components\Helper\Helper;
 
 /**
  * Class Token

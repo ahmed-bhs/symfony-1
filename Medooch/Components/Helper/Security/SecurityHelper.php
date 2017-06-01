@@ -15,7 +15,7 @@ namespace Medooch\Components\Helper\Security;
 use AppWeb\Core\UserBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
-use Components\Helper\Request\RequestHelperInterface;
+use Medooch\Components\Helper\Request\RequestHelperInterface;
 
 /**
  * Class SecurityHelper

@@ -5,7 +5,7 @@
 
 namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
-use Components\Helper\Yaml\YamlManipulator;
+use Medooch\Components\Helper\Yaml\YamlManipulator;
 use Sensio\Bundle\GeneratorBundle\Command\Helper\QuestionHelper;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 
