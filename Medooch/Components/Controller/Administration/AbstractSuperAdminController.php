@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of the Final-Safe.
+ * This file is part of the MedoochPackages.
  * Created by trimechmehdi.
  * Date: 5/26/17
  * Time: 15:29

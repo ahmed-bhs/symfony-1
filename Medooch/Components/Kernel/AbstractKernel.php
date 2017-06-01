@@ -4,7 +4,7 @@ namespace Medooch\Components\Kernel;
 use Shared\DBRBundle\DBRBundle;
 
 /**
- * This file is part of the Final-Safe.
+ * This file is part of the MedoochPackages.
  * Created by trimechmehdi.
  * Date: 5/12/17
  * Time: 17:04
