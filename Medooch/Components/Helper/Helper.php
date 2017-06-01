@@ -4,7 +4,7 @@
  * Created by trimechmehdi.
  * Date: 5/22/17
  * Time: 10:31
- * @author: Mobelite <http://www.mobelite.fr/>
+ * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
