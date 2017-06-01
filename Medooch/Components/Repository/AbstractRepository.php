@@ -10,14 +10,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Repository;
+namespace Medooch\Components\Repository;
 
 use Components\Traits\RepositoryMethods;
 use Doctrine\ORM\EntityRepository;
 
 /**
  * Class AbstractRepository
- * @package Components\Repository
+ * @package Medooch\Components\Repository
  */
 class AbstractRepository extends EntityRepository implements AbstractRepositoryInterface
 {

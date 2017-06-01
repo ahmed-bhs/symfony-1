@@ -10,7 +10,7 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Image;
+namespace Medooch\Components\Helper\Image;
 
 /**
  * Interface ImageHelperInterface

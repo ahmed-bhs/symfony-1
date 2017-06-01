@@ -10,17 +10,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Lib\Google\Translator;
+namespace Medooch\Components\Lib\Google\Translator;
 
 /**
  * Interface GoogleTranslatorInterface
- * @package Components\Lib\Google\Translator
+ * @package Medooch\Components\Lib\Google\Translator
  */
 interface GoogleTranslatorInterface
 {
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Translate word from $source language to $target language

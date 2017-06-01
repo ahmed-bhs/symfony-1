@@ -3,7 +3,7 @@
 /**
  * @Mobelite: Custom extension
  */
-namespace Components\Extensions;
+namespace Medooch\Components\Extensions;
 
 use FOS\UserBundle\Model\UserInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -92,7 +92,7 @@ class Parameters extends \Twig_Extension
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Return Tree View
@@ -132,7 +132,7 @@ class Parameters extends \Twig_Extension
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Versionning assets with version variable.

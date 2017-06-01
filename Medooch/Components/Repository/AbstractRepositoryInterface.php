@@ -10,12 +10,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Repository;
+namespace Medooch\Components\Repository;
 
 
 /**
  * Interface AbstractRepositoryInterface
- * @package Components\Repository
+ * @package Medooch\Components\Repository
  */
 interface AbstractRepositoryInterface
 {

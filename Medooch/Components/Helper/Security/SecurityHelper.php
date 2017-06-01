@@ -10,7 +10,7 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Security;
+namespace Medooch\Components\Helper\Security;
 
 use AppWeb\Core\UserBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,7 +19,7 @@ use Components\Helper\Request\RequestHelperInterface;
 
 /**
  * Class SecurityHelper
- * @package Components\Helper\Security
+ * @package Medooch\Components\Helper\Security
  */
 final class SecurityHelper implements SecurityHelperInterface
 {
@@ -47,7 +47,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return mixed|null
@@ -65,7 +65,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return mixed|null|User
@@ -80,7 +80,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return mixed|null|User
@@ -95,7 +95,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return User
@@ -108,7 +108,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return User
@@ -121,7 +121,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $name
@@ -139,7 +139,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return bool
@@ -152,7 +152,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param Request $request
@@ -170,7 +170,7 @@ final class SecurityHelper implements SecurityHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param int $length

@@ -10,19 +10,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Doctrine\Filter;
+namespace Medooch\Components\Doctrine\Filter;
 use Doctrine\ORM\Mapping\ClassMetaData,
     Doctrine\ORM\Query\Filter\SQLFilter;
 
 /**
  * Class IsDeletedFilter
- * @package Components\Doctrine\Filter
+ * @package Medooch\Components\Doctrine\Filter
  */
 class IsDeletedFilter extends SQLFilter
 {
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Filter by is deleted

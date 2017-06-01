@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Controller\Administration;
+namespace Medooch\Components\Controller\Administration;
 use Components\Controller\AbstractController;
 
 

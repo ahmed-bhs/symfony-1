@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Extensions;
+namespace Medooch\Components\Extensions;
 
 use Symfony\Bridge\Twig\Form\TwigRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\Form\FormView;
 
 /**
  * Class FormExtension
- * @package Components\Extensions
+ * @package Medooch\Components\Extensions
  */
 class FormExtension extends \Twig_Extension
 {
@@ -65,7 +65,7 @@ class FormExtension extends \Twig_Extension
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param FormView $view

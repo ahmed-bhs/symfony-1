@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Helper\Mailer;
+namespace Medooch\Components\Helper\Mailer;
 
 use Components\Validate;
 use Monolog\Logger;
@@ -23,7 +23,7 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
  * Class Mailer
- * @package Components\Helper\Mailer
+ * @package Medooch\Components\Helper\Mailer
  */
 class Mailer implements MailerInterface
 {
@@ -78,7 +78,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param $view
@@ -95,7 +95,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function Example: ****************
      * $this->mailer->sendEmail([
@@ -144,7 +144,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return Message
@@ -169,7 +169,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param OptionsResolver $resolver
@@ -200,7 +200,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * check if the email is valid
@@ -226,7 +226,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $path
@@ -242,7 +242,7 @@ class Mailer implements MailerInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param Message $message

@@ -10,14 +10,14 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Request;
+namespace Medooch\Components\Helper\Request;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Class RequestHelper
- * @package Components\Helper\Request
+ * @package Medooch\Components\Helper\Request
  */
 final class RequestHelper implements RequestHelperInterface
 {

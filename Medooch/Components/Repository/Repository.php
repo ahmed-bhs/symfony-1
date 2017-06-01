@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Repository;
+namespace Medooch\Components\Repository;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Class Repository
- * @package Components\Repository
+ * @package Medooch\Components\Repository
  */
 final class Repository
 {

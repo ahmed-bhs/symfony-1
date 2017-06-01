@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Traits;
+namespace Medooch\Components\Traits;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Mapping\ClassMetadata;
 /**
  * Trait RepositoryMethods
- * @package Components\Traits
+ * @package Medooch\Components\Traits
  */
 trait RepositoryMethods
 {
@@ -130,7 +130,7 @@ trait RepositoryMethods
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Find one object by token

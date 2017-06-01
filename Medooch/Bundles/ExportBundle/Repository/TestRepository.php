@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle\Repository;
+namespace Medooch\Bundles\ExportBundle\Repository;
 
 /**
  * TestRepository

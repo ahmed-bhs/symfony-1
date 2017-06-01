@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Helper;
+namespace Medooch\Components\Helper;
 
 use Symfony\Component\Security\Csrf\TokenGenerator\UriSafeTokenGenerator;
 
@@ -21,7 +21,7 @@ abstract class Helper
 {
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return string
@@ -33,7 +33,7 @@ abstract class Helper
     }
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Generate Guid
@@ -53,7 +53,7 @@ abstract class Helper
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Generate Token

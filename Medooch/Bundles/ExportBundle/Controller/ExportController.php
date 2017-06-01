@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bundles\ExportBundle\Controller;
+namespace Medooch\Bundles\ExportBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * Class ExportController
- * @package Bundles\ExportBundle\Controller
+ * @package Medooch\Bundles\ExportBundle\Controller
  */
 class ExportController extends Controller
 {

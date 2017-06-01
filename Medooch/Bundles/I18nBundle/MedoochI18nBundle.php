@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\MedoochI18nBundle;
+namespace Medooch\Bundles\MedoochI18nBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

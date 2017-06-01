@@ -3,7 +3,7 @@
  * Copyright (c) 2017.
  */
 
-namespace Bundles\MedoochI18nBundle\Lib\Reverso;
+namespace Medooch\Bundles\MedoochI18nBundle\Lib\Reverso;
 
 /**
  * Class Spelling

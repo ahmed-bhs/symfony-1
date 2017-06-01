@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Lib\Reverso;
+namespace Medooch\Components\Lib\Reverso;
 
 /**
  * Class Spelling
- * @package Components\Lib\Reverso
+ * @package Medooch\Components\Lib\Reverso
  */
 final class Spelling implements SpellingInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle\DependencyInjection;
+namespace Medooch\Bundles\ExportBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

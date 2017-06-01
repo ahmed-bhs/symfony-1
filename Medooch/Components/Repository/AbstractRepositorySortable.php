@@ -10,14 +10,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Repository;
+namespace Medooch\Components\Repository;
 
 use Components\Traits\RepositoryMethods;
 use Gedmo\Sortable\Entity\Repository\SortableRepository;
 
 /**
  * Class AbstractRepositorySortable
- * @package Components\Repository
+ * @package Medooch\Components\Repository
  */
 class AbstractRepositorySortable extends SortableRepository implements AbstractRepositoryInterface
 {

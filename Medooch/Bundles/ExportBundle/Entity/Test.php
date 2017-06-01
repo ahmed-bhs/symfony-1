@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle\Entity;
+namespace Medooch\Bundles\ExportBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Test
  *
  * @ORM\Table(name="test")
- * @ORM\Entity(repositoryClass="Bundles\ExportBundle\Repository\TestRepository")
+ * @ORM\Entity(repositoryClass="Medooch\Bundles\ExportBundle\Repository\TestRepository")
  */
 class Test
 {

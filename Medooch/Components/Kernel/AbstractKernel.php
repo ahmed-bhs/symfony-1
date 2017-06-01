@@ -1,6 +1,6 @@
 <?php
 
-namespace Components\Kernel;
+namespace Medooch\Components\Kernel;
 use Shared\DBRBundle\DBRBundle;
 
 /**

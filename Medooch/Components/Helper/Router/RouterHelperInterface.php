@@ -10,7 +10,7 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Router;
+namespace Medooch\Components\Helper\Router;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -19,7 +19,7 @@ use Symfony\Component\Routing\Route;
 
 /**
  * Interface RouterHelperInterface
- * @package Components\Helper\Router
+ * @package Medooch\Components\Helper\Router
  */
 interface RouterHelperInterface
 {

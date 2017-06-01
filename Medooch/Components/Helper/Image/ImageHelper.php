@@ -10,14 +10,14 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Image;
+namespace Medooch\Components\Helper\Image;
 
 use Liip\ImagineBundle\Imagine\Cache\CacheManager;
 use Liip\ImagineBundle\Imagine\Filter\FilterConfiguration;
 
 /**
  * Class ImageHelper
- * @package Components\Helper\Image
+ * @package Medooch\Components\Helper\Image
  */
 final class ImageHelper implements ImageHelperInterface
 {
@@ -44,7 +44,7 @@ final class ImageHelper implements ImageHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string|null $path
@@ -66,7 +66,7 @@ final class ImageHelper implements ImageHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $filter

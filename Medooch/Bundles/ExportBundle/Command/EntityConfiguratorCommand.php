@@ -3,7 +3,7 @@
  * Copyright (c) 2017.
  */
 
-namespace Bundles\ExportBundle\Command;
+namespace Medooch\Bundles\ExportBundle\Command;
 use Components\Helper\Yaml\YamlManipulator;
 use Sensio\Bundle\GeneratorBundle\Command\AutoComplete\EntitiesAutoCompleter;
 use Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineCrudCommand;
@@ -18,7 +18,7 @@ use Symfony\Component\Console\Question\Question;
 
 /**
  * Class EntityConfiguratorCommand
- * @package Bundles\ExportBundle\Command
+ * @package Medooch\Bundles\ExportBundle\Command
  */
 class EntityConfiguratorCommand extends GenerateDoctrineCrudCommand
 {

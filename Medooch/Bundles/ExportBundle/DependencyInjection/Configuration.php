@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle\DependencyInjection;
+namespace Medooch\Bundles\ExportBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

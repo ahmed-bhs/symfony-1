@@ -10,7 +10,7 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Router;
+namespace Medooch\Components\Helper\Router;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -22,7 +22,7 @@ use Components\Helper\Request\RequestHelperInterface;
 
 /**
  * Class RouterHelper
- * @package Components\Helper\Router
+ * @package Medooch\Components\Helper\Router
  */
 final class RouterHelper implements RouterHelperInterface
 {
@@ -50,7 +50,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return string
@@ -67,7 +67,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * ---------------------------------------
@@ -82,7 +82,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $action
@@ -101,7 +101,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $action
@@ -120,7 +120,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $action
@@ -142,7 +142,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $routeName
@@ -160,7 +160,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $route
@@ -186,7 +186,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function input: ****************
      * @param string $url
@@ -203,7 +203,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return Route
@@ -223,7 +223,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return string
@@ -236,7 +236,7 @@ final class RouterHelper implements RouterHelperInterface
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return array

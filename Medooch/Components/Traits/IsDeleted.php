@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Traits;
+namespace Medooch\Components\Traits;
 
 /**
  * Class IsDeleted
- * @package Components\Traits
+ * @package Medooch\Components\Traits
  */
 trait IsDeleted
 {

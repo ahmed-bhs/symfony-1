@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle;
+namespace Medooch\Bundles\ExportBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

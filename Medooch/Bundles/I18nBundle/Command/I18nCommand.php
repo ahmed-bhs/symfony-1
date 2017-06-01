@@ -3,7 +3,7 @@
  * Copyright (c) 2017.
  */
 
-namespace Bundles\MedoochI18nBundle\Command;
+namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
 use Components\Helper\Yaml\YamlManipulator;
 use Sensio\Bundle\GeneratorBundle\Command\Helper\QuestionHelper;
@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 
 /**
  * Class I18nCommand
- * @package Bundles\MedoochI18nBundle\Command
+ * @package Medooch\Bundles\MedoochI18nBundle\Command
  */
 abstract class I18nCommand extends ContainerAwareCommand
 {

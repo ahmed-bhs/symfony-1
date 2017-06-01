@@ -10,7 +10,7 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Security;
+namespace Medooch\Components\Helper\Security;
 
 use Symfony\Component\HttpFoundation\Request;
 use WellCommerce\Bundle\AppBundle\Entity\Client;
@@ -18,7 +18,7 @@ use WellCommerce\Bundle\AppBundle\Entity\User;
 
 /**
  * Interface SecurityHelperInterface
- * @package Components\Helper\Security
+ * @package Medooch\Components\Helper\Security
  */
 interface SecurityHelperInterface
 {

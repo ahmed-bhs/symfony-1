@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Traits;
+namespace Medooch\Components\Traits;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Trait NestedSetEntityUuid
- * @package Components\Traits
+ * @package Medooch\Components\Traits
  */
 trait NestedSetEntityUuid
 {

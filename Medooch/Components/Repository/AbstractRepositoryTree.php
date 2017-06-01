@@ -10,14 +10,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Repository;
+namespace Medooch\Components\Repository;
 
 use Components\Traits\RepositoryMethods;
 use Gedmo\Tree\Entity\Repository\NestedTreeRepository;
 
 /**
  * Class AbstractRepositoryTree
- * @package Components\Repository
+ * @package Medooch\Components\Repository
  */
 class AbstractRepositoryTree extends NestedTreeRepository implements AbstractRepositoryInterface
 {
@@ -25,7 +25,7 @@ class AbstractRepositoryTree extends NestedTreeRepository implements AbstractRep
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function output: ****************
      * @return \Doctrine\ORM\QueryBuilder
@@ -46,7 +46,7 @@ class AbstractRepositoryTree extends NestedTreeRepository implements AbstractRep
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Get the entityRoot element
@@ -64,7 +64,7 @@ class AbstractRepositoryTree extends NestedTreeRepository implements AbstractRep
 
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Get the entityRoot element

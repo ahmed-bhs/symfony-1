@@ -2,7 +2,7 @@
 /**
  * Copyright (c) 2017.
  */
-namespace Bundles\MedoochI18nBundle\Command;
+namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
 use Components\Helper\Yaml\YamlManipulator;
 use Components\Lib\Reverso\Spelling;
@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\KernelInterface;
 
 /**
  * Class SpellingCorrectionCommand
- * @package Bundles\MedoochI18nBundle\Command
+ * @package Medooch\Bundles\MedoochI18nBundle\Command
  */
 class SpellingCorrectionCommand extends I18nCommand
 {

@@ -10,17 +10,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Helper\Mailer;
+namespace Medooch\Components\Helper\Mailer;
 
 /**
  * Class MailerInterface
- * @package Components\Helper\Mailer
+ * @package Medooch\Components\Helper\Mailer
  */
 interface MailerInterface
 {
     /**
      * ---------------------------------------
-     * @author: contact[at]mobelite.fr
+     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
      * ---------------------------------------
      * **************** Function documentation: ****************
      * Send Mail with SwiftMailer

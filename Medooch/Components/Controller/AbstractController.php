@@ -10,20 +10,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Components\Controller;
+namespace Medooch\Components\Controller;
 
 use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
  * Class AbstractController
- * @package Components\Controller
+ * @package Medooch\Components\Controller
+ * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
  */
 abstract class AbstractController extends \Symfony\Bundle\FrameworkBundle\Controller\Controller
 {
     /**
-     * ---------------------------------------
-     * @author: contact[at]mobelite.fr
-     * ---------------------------------------
      * **************** Function input: ****************
      * @param $key
      * @param array $parameters
@@ -39,9 +37,6 @@ abstract class AbstractController extends \Symfony\Bundle\FrameworkBundle\Contro
     }
 
     /**
-     * ---------------------------------------
-     * @author: contact[at]mobelite.fr
-     * ---------------------------------------
      * **************** Function input: ****************
      * @param array $options
      * ---------------------------------------
@@ -58,9 +53,6 @@ abstract class AbstractController extends \Symfony\Bundle\FrameworkBundle\Contro
     }
 
     /**
-     * ---------------------------------------
-     * @author: contact[at]mobelite.fr
-     * ---------------------------------------
      * **************** Function documentation: ****************
      * Change Entity Status by proprety
      * ---------------------------------------

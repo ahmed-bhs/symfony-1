@@ -10,11 +10,11 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Components\Helper\Request;
+namespace Medooch\Components\Helper\Request;
 
 /**
  * Interface RequestHelperInterface
- * @package Components\Helper\Request
+ * @package Medooch\Components\Helper\Request
  */
 interface RequestHelperInterface
 {

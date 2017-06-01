@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundles\ExportBundle\Tests\Controller;
+namespace Medooch\Bundles\ExportBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
