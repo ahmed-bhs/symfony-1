@@ -12,7 +12,6 @@
 
 namespace Medooch\Components\Helper\Security;
 
-use AppWeb\Core\UserBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Medooch\Components\Helper\Request\RequestHelperInterface;
@@ -61,62 +60,6 @@ final class SecurityHelper implements SecurityHelperInterface
         }
         
         return null;
-    }
-
-    /**
-     * ---------------------------------------
-     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
-     * ---------------------------------------
-     * **************** Function output: ****************
-     * @return mixed|null|User
-     * ---------------------------------------
-     */
-    public function getCurrentClient()
-    {
-        $user = $this->getCurrentUser();
-        
-        return $user instanceof User ? $user : null;
-    }
-
-    /**
-     * ---------------------------------------
-     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
-     * ---------------------------------------
-     * **************** Function output: ****************
-     * @return mixed|null|User
-     * ---------------------------------------
-     */
-    public function getCurrentAdmin()
-    {
-        $user = $this->getCurrentUser();
-        
-        return $user instanceof User ? $user : null;
-    }
-
-    /**
-     * ---------------------------------------
-     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
-     * ---------------------------------------
-     * **************** Function output: ****************
-     * @return User
-     * ---------------------------------------
-     */
-    public function getAuthenticatedClient(): User
-    {
-        return $this->getCurrentUser();
-    }
-
-    /**
-     * ---------------------------------------
-     * @author: Trimech Mehdi <trimechmehdi11@gmail.com>
-     * ---------------------------------------
-     * **************** Function output: ****************
-     * @return User
-     * ---------------------------------------
-     */
-    public function getAuthenticatedAdmin(): User
-    {
-        return $this->getCurrentUser();
     }
 
     /**

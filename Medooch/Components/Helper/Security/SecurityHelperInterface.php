@@ -23,15 +23,7 @@ use WellCommerce\Bundle\AppBundle\Entity\User;
 interface SecurityHelperInterface
 {
     public function getCurrentUser();
-    
-    public function getCurrentClient();
-    
-    public function getCurrentAdmin();
-    
-    public function getAuthenticatedClient(): User;
-    
-    public function getAuthenticatedAdmin(): User;
-    
+
     public function isActiveFirewall(string $name): bool;
     
     public function isActiveAdminFirewall(): bool;
