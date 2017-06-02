@@ -3,6 +3,7 @@
 namespace Medooch\Components\Kernel;
 use Medooch\Bundles\ExportBundle\ExportBundle;
 use Medooch\Bundles\MedoochI18nBundle\MedoochI18nBundle;
+use Symfony\Component\Config\Loader\LoaderInterface;
 
 /**
  * This file is part of the MedoochPackages.
@@ -64,5 +65,10 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
     public function getRootDir()
     {
         return __DIR__.'/../../../app';
+    }
+
+    public function registerContainerConfiguration(LoaderInterface $loader)
+    {
+        $loader->load(__DIR__.'/../services.yml');
     }
 }
