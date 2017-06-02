@@ -45,16 +45,13 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             new PetkoparaMultiSearchBundle(),
         ];
 
-        if ($this->debug) {
+        if (in_array($this->environment, array('dev', 'test'))) {
             $bundles[] = new \Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new \Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            if (in_array($this->environment, array('dev', 'test'))) {
-                /** dev bundles */
-                $bundles[] = new MedoochTranslationBundle();
-                $bundles[] = new PetkoparaCrudGeneratorBundle();
-            }
+            $bundles[] = new MedoochTranslationBundle();
+            $bundles[] = new PetkoparaCrudGeneratorBundle();
         }
 
         return $bundles;
