@@ -30,7 +30,7 @@ class ExportController extends Controller
      * Export Action from entity to CSV
      * ---------------------------------------
      * **************** Function Annotation: ****************
-     * @Route("/{entity}")
+     * @Route("/{entity}", name="medooch_export_csv")
      * ---------------------------------------
      * **************** Function input: ****************
      * @param $entity
@@ -107,6 +107,17 @@ class ExportController extends Controller
                 }
             }
             $query->groupBy($groupBy);
+        }
+
+        /** query order by */
+        if (isset($queryBuilder['orderBy']) && !empty($queryBuilder['orderBy'])) {
+            foreach ($queryBuilder['orderBy'] as $key => $orderBy) {
+                $params = explode(',', $orderBy);
+                if (!is_array($params)) {
+                    throw $this->createNotFoundException('Invalid declaration of query under ' . $entity . '. Please check the documentation');
+                }
+                $query->addOrderBy($params[0], $params[1]);
+            }
         }
 
         /** @var get query Result $results */

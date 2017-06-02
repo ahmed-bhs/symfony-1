@@ -13,11 +13,8 @@ Packages structure and features:
 ----
 
 1. Bundles
-    1. ExportBundle
-        - Export entities Data to CSV Files.
-    2. MedoochTranslationBundle
-        - (Spelling Checker for frensh language)
-        - (I18n files generator)
+    1. [ExportBundle :(Export entities Data to CSV Files)](https://github.com/medooch/symfony/tree/master/Medooch/Bundles/ExportBundle)
+    2. [MedoochTranslationsBundle :(Spelling Checker for frensh language)](https://github.com/medooch/symfony/tree/master/Medooch/Bundles/MedoochTranslationBundle)
 2. Components
     1. Helper
         - Image

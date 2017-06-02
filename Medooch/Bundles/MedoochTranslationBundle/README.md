@@ -1,6 +1,6 @@
 # Medooch Translation Bundle
 
-This bundle offer to developers the possibilites to generate all i18n files from the %locale_parameter% to %locales_parameters%.
+This bundle offer to developers the possibilities to generate all i18n files from the %locale_parameter% to %locales_parameters%.
 
 #### Important:
 To keep the original files as they are, we are working under the app / Resources directory. You must override any bundles you want to generate i18n files or correct spelling errors.

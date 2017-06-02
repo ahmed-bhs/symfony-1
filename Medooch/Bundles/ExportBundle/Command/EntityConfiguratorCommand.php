@@ -28,7 +28,7 @@ class EntityConfiguratorCommand extends GenerateDoctrineCrudCommand
     protected function configure()
     {
         $this
-            ->setName('mtrimech:export:entity_configure')
+            ->setName('medooch:export:configure')
             ->setDescription('Configure entity in the config.yml')->setDefinition(array(
                 new InputArgument('entity', InputArgument::OPTIONAL, 'The entity class name to initialize (shortcut notation)'),
                 new InputOption('entity', '', InputOption::VALUE_REQUIRED, 'The entity class name to initialize (shortcut notation)'),
