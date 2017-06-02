@@ -52,7 +52,8 @@ Installation:
     
     composer require medooch/symfony:dev-master
 
-###Optional:
+Optional:
+----
 If you want to use the hole libraries and bundles of this packages, just extend the \Medooch\Components\Kernel\AbstractKernel
 
 1. Extending AbstractKernel:
