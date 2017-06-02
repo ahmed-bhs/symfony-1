@@ -1,7 +1,8 @@
 <?php
 
 namespace Medooch\Components\Kernel;
-use Shared\DBRBundle\DBRBundle;
+use Medooch\Bundles\ExportBundle\ExportBundle;
+use Medooch\Bundles\MedoochI18nBundle\MedoochI18nBundle;
 
 /**
  * This file is part of the MedoochPackages.
@@ -35,15 +36,7 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             new \Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            // external bundles
-            new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new \Knp\Bundle\TimeBundle\KnpTimeBundle(),
-            new \FOS\UserBundle\FOSUserBundle(),
-            new \Liip\ImagineBundle\LiipImagineBundle(),
-            new \A2lix\I18nDoctrineBundle\A2lixI18nDoctrineBundle(),
-            // shared bundles
-            new \AppWeb\Core\UserBundle\UserBundle(),
-            new DBRBundle(),
+            new ExportBundle(),
         ];
 
         if ($this->debug) {
@@ -51,9 +44,9 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new \Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            if (in_array($this->name, array('local', 'web'))) {
+            if (in_array($this->name, array('dev', 'test'))) {
                 /** dev bundles */
-                $bundles[] = new \Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
+                $bundles[] = new MedoochI18nBundle();
             }
         }
 

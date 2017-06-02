@@ -1,6 +1,6 @@
 <?php
 
-namespace Medooch\Bundles\MedoochI18nBundle\DependencyInjection;
+namespace Medooch\Bundles\I18nBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('medooch_i18n');
 
         $rootNode->children()
-            ->arrayNode('translator')
+            ->arrayNode('i18n')
                 ->children()
                     ->arrayNode('bundles')
                         ->prototype('scalar')

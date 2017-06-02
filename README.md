@@ -64,5 +64,47 @@ Installation:
      
 Usage
 ----
-
 To start using this package, please check the readme file for each components/bundles or click check our summary.
+
+Examples Test:
+----
+        <?php
+        
+        namespace AppBundle\Controller;
+        
+        use Medooch\Components\Helper\Helper;
+        use Medooch\Components\Helper\Yml\YamlManipulator;
+        use Medooch\Components\Lib\Google\Translator\GoogleTranslator;
+        use Medooch\Components\Validator\Validate;
+        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+        use Symfony\Component\HttpFoundation\Request;
+        use Symfony\Component\Validator\Constraints\Email;
+        
+        class DefaultController extends Controller
+        {
+            /**
+             * @Route("/", name="homepage")
+             */
+            public function indexAction(Request $request)
+            {
+                /** Component Test */
+                /** helper test */
+                dump(Helper::fosTokenGenerator());
+                dump(Helper::generateGuid());
+                dump(Helper::generateToken());
+        
+                /** validator test */
+                dump(Validate::validate('trimechmehdi11@gmail.com', new Email()));
+                dump(Validate::validate('trimechmehdi11gmail.com', new Email()));
+        
+                /** google translator test */
+                dump(GoogleTranslator::translate('hello', 'en', 'fr'));
+        
+                die;
+                // replace this example code with whatever you need
+                return $this->render('default/index.html.twig', [
+                    'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
+                ]);
+            }
+        }

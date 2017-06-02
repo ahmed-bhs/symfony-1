@@ -2,7 +2,7 @@
 /**
  * Copyright (c) 2017.
  */
-namespace Medooch\Bundles\MedoochI18nBundle\Command;
+namespace Medooch\Bundles\I18nBundle\Command;
 
 use Medooch\Components\Lib\Google\Translator\GoogleTranslator;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
 /**
  * Class TranslationsGeneratorCommand
- * @package Medooch\Bundles\MedoochI18nBundle\Command
+ * @package Medooch\Bundles\I18nBundle\Command
  */
 class TranslationsGeneratorCommand extends I18nCommand
 {

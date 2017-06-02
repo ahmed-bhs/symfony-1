@@ -1,6 +1,6 @@
 <?php
 
-namespace Medooch\Bundles\MedoochI18nBundle\DependencyInjection;
+namespace Medooch\Bundles\I18nBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class MedoochI18nExtension extends Extension
+class I18nExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -23,7 +23,7 @@ class MedoochI18nExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         foreach ($config as $item => $value){
-            $container->setParameter('generator.'.$item, $value);
+            $container->setParameter('medooch_i18n.'.$item, $value);
         }
     }
 }
