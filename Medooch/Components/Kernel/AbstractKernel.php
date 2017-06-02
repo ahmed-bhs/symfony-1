@@ -4,6 +4,7 @@ namespace Medooch\Components\Kernel;
 
 use Liip\ImagineBundle\LiipImagineBundle;
 use Medooch\Bundles\ExportBundle\ExportBundle;
+use Medooch\Bundles\MedoochFrameworkBundle\MedoochFrameworkBundle;
 use Medooch\Bundles\MedoochTranslationBundle\MedoochTranslationBundle;
 use Petkopara\CrudGeneratorBundle\PetkoparaCrudGeneratorBundle;
 use Petkopara\MultiSearchBundle\PetkoparaMultiSearchBundle;
@@ -40,6 +41,7 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             new \Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new MedoochFrameworkBundle(),
             new ExportBundle(),
             new LiipImagineBundle(),
             new PetkoparaMultiSearchBundle(),

@@ -4,6 +4,13 @@ A simple way to export data from specific entity to CSV file.
 
 This bundle provide command to configure the exporter for each entity. Just execute the command and give the entity name as "AppBundle:Test".
 
+Update Routing
+----
+    medooch_export:
+        resource: "@ExportBundle/Controller"
+        type: annotation
+        prefix:   /export
+        
 Manual Configuration
 ----
     // app/config/config_dev.yml

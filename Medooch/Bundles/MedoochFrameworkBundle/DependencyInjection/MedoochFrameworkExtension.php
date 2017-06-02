@@ -1,6 +1,6 @@
 <?php
 
-namespace Medooch\Bundles\ExportBundle\DependencyInjection;
+namespace Medooch\Bundles\MedoochFrameworkBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class ExportExtension extends Extension
+class MedoochFrameworkExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -22,17 +22,7 @@ class ExportExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        if (!isset($config['entities'])) {
-            throw new \Exception('The entities node must be defined!');
-        }
-
-        $entities = $config['entities'];
-        foreach ($entities as $key => $parameters) {
-            if (!isset($parameters['query'])) {
-                throw new \Exception('The query node must be defined!');
-            } else {
-                $container->setParameter($key, $parameters);
-            }
-        }
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
     }
 }
