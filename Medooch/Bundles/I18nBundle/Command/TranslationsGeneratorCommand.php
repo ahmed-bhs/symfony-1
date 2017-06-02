@@ -4,14 +4,13 @@
  */
 namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
-use Components\Lib\Google\Translator\GoogleTranslator;
+use Medooch\Components\Lib\Google\Translator\GoogleTranslator;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
-
 /**
  * Class TranslationsGeneratorCommand
  * @package Medooch\Bundles\MedoochI18nBundle\Command

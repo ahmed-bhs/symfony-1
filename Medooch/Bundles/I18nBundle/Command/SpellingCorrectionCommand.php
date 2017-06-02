@@ -4,13 +4,11 @@
  */
 namespace Medooch\Bundles\MedoochI18nBundle\Command;
 
-use Medooch\Components\Helper\Yml\YamlManipulator;
-use Components\Lib\Reverso\Spelling;
+use Medooch\Components\Lib\Reverso\Spelling;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
-
 /**
  * Class SpellingCorrectionCommand
  * @package Medooch\Bundles\MedoochI18nBundle\Command
