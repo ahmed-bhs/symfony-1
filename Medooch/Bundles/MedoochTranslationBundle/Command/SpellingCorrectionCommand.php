@@ -2,7 +2,7 @@
 /**
  * Copyright (c) 2017.
  */
-namespace Medooch\Bundles\I18nBundle\Command;
+namespace Medooch\Bundles\MedoochTranslationBundle\Command;
 
 use Medooch\Components\Lib\Reverso\Spelling;
 use Symfony\Component\Console\Input\InputInterface;
@@ -11,7 +11,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
 /**
  * Class SpellingCorrectionCommand
- * @package Medooch\Bundles\I18nBundle\Command
+ * @package Medooch\Bundles\MedoochTranslationBundle\Command
  */
 class SpellingCorrectionCommand extends I18nCommand
 {
@@ -41,7 +41,7 @@ class SpellingCorrectionCommand extends I18nCommand
     protected function configure()
     {
         $this
-            ->setName('mob:i18n:spelling')
+            ->setName('medooch:i18n:spelling')
             ->setDescription('Spelling correction in i18n files');
     }
 
@@ -61,12 +61,12 @@ class SpellingCorrectionCommand extends I18nCommand
         $this->source = $this->getContainer()->getParameter('locale');
 
         if ($this->source != 'fr') {
-            throw new \Exception('The spelling correction language is "frensh". Change your locale parameter to "fr".');
+            throw new \Exception('The spelling correction language is not equal to "fr" => "frensh". Change your locale parameter to "fr".');
         }
 
         $bundles = $this->getContainer()->getParameter('generator.translator')['bundles'];
         $this->io = new SymfonyStyle($input, $output);
-        $this->io->title('Start Spelling Correction by Mobelite-Labs');
+        $this->io->title('Start Spelling Correction by Medooch');
         $this->output = [];
 
         foreach ($bundles as $bundle) {

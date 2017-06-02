@@ -15,7 +15,7 @@ Packages structure and features:
 1. Bundles
     1. ExportBundle
         - Export entities Data to CSV Files.
-    2. I18nBundle
+    2. MedoochTranslationBundle
         - (Spelling Checker for frensh language)
         - (I18n files generator)
 2. Components
@@ -55,12 +55,7 @@ Installation:
     
     composer require medooch/symfony:dev-master
     
-1- Enabling services:
-
-// app/config/services.yml
-
-    imports:
-        resource: '%kernel.project_dir%/src/Medooch/Components/services.yml'
+1- Extending AbstractKernel:
      
 Usage
 ----

@@ -1,6 +1,6 @@
 <?php
 
-namespace Medooch\Bundles\I18nBundle\DependencyInjection;
+namespace Medooch\Bundles\MedoochTranslationBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class I18nExtension extends Extension
+class MedoochTranslationExtension extends Extension
 {
     /**
      * {@inheritdoc}

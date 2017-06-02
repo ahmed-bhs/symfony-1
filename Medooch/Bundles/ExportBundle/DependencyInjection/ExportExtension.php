@@ -34,5 +34,8 @@ class ExportExtension extends Extension
                 $container->setParameter($key, $parameters);
             }
         }
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../../../Components'));
+        $loader->load('services.yml');
     }
 }

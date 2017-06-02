@@ -1,9 +1,12 @@
 <?php
 
 namespace Medooch\Components\Kernel;
+
+use Liip\ImagineBundle\LiipImagineBundle;
 use Medooch\Bundles\ExportBundle\ExportBundle;
-use Medooch\Bundles\MedoochI18nBundle\MedoochI18nBundle;
-use Symfony\Component\Config\Loader\LoaderInterface;
+use Medooch\Bundles\MedoochTranslationBundle\MedoochTranslationBundle;
+use Petkopara\CrudGeneratorBundle\PetkoparaCrudGeneratorBundle;
+use Petkopara\MultiSearchBundle\PetkoparaMultiSearchBundle;
 
 /**
  * This file is part of the MedoochPackages.
@@ -38,6 +41,8 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new ExportBundle(),
+            new LiipImagineBundle(),
+            new PetkoparaMultiSearchBundle(),
         ];
 
         if ($this->debug) {
@@ -45,30 +50,13 @@ abstract class AbstractKernel extends \Symfony\Component\HttpKernel\Kernel
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new \Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            if (in_array($this->name, array('dev', 'test'))) {
+            if (in_array($this->environment, array('dev', 'test'))) {
                 /** dev bundles */
-                $bundles[] = new MedoochI18nBundle();
+                $bundles[] = new MedoochTranslationBundle();
+                $bundles[] = new PetkoparaCrudGeneratorBundle();
             }
         }
 
         return $bundles;
-    }
-
-    /**
-     * ---------------------------------------
-     * @author: Trimech Mehdi
-     * ---------------------------------------
-     * **************** Function output: ****************
-     * @return string
-     * ---------------------------------------
-     */
-    public function getRootDir()
-    {
-        return __DIR__.'/../../../app';
-    }
-
-    public function registerContainerConfiguration(LoaderInterface $loader)
-    {
-        $loader->load(__DIR__.'/../services.yml');
     }
 }

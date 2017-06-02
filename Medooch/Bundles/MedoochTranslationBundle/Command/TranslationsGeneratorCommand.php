@@ -2,7 +2,7 @@
 /**
  * Copyright (c) 2017.
  */
-namespace Medooch\Bundles\I18nBundle\Command;
+namespace Medooch\Bundles\MedoochTranslationBundle\Command;
 
 use Medooch\Components\Lib\Google\Translator\GoogleTranslator;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
 /**
  * Class TranslationsGeneratorCommand
- * @package Medooch\Bundles\I18nBundle\Command
+ * @package Medooch\Bundles\MedoochTranslationBundle\Command
  */
 class TranslationsGeneratorCommand extends I18nCommand
 {
@@ -48,7 +48,7 @@ class TranslationsGeneratorCommand extends I18nCommand
     protected function configure()
     {
         $this
-            ->setName('mob:i18n:translations')
+            ->setName('medooch:i18n:translations')
             ->setDescription('Generate all translations files from the default local in parameters.yml to the configured locales');
     }
 
@@ -85,7 +85,7 @@ class TranslationsGeneratorCommand extends I18nCommand
 
         $bundles = $this->getContainer()->getParameter('generator.translator')['bundles'];
         $this->io = new SymfonyStyle($input, $output);
-        $this->io->title('Start Generating Translations by Mobelite-Labs');
+        $this->io->title('Start Generating Translations by Medooch');
         $this->output = [];
 
         foreach ($bundles as $bundle) {
