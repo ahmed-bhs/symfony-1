@@ -1,4 +1,4 @@
-# symfony
+# Medooch Symfony 3.3 packages [PHP 7.1.1]
 
 Symfony 3.3 optionals plugins and bundles
 
