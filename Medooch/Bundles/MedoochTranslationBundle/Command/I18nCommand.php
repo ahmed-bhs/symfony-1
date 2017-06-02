@@ -42,6 +42,13 @@ abstract class I18nCommand extends ContainerAwareCommand
         }
     }
 
+    protected function checkConfiguration()
+    {
+        if (!$this->getContainer()->hasParameter('generator.translator')) {
+            throw new \Exception('The translations generator is not configured. Please check the readme file at : https://github.com/medooch/symfony/tree/master/Medooch/Bundles/MedoochTranslationBundle');
+        }
+    }
+
     protected function getFileContents($filename)
     {
         return YamlManipulator::getFileContents($filename);

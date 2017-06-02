@@ -7,6 +7,7 @@ namespace Medooch\Bundles\MedoochTranslationBundle\Command;
 use Medooch\Components\Lib\Reverso\Spelling;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\ConfirmationQuestion;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpKernel\KernelInterface;
 /**
@@ -50,10 +51,15 @@ class SpellingCorrectionCommand extends I18nCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->kernel = $this->getContainer()->get('kernel');
-        if (!$this->getContainer()->hasParameter('generator.translator')) {
-            throw new \Exception('The translations generator is not configured.');
+        $questionHelper = $this->getQuestionHelper();
+        if ($input->isInteractive()) {
+            $question = new ConfirmationQuestion($questionHelper->getQuestion('Do you want to check spelling', 'yes', '?'), true);
+            if (!$questionHelper->ask($input, $output, $question)) {
+                return 1;
+            }
         }
+        $this->kernel = $this->getContainer()->get('kernel');
+        $this->checkConfiguration();
 
         /**
          * Get the source and targets locales

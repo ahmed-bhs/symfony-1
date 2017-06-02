@@ -61,10 +61,10 @@ class TranslationsGeneratorCommand extends I18nCommand
         if ($input->isInteractive()) {
             $question = new ConfirmationQuestion($questionHelper->getQuestion('Do you want to check spelling', 'yes', '?'), true);
             if ($questionHelper->ask($input, $output, $question)) {
-                $command = $this->getApplication()->find('mob:i18n:spelling');
+                $command = $this->getApplication()->find('medooch:i18n:spelling');
 
                 $arguments = array(
-                    'command' => 'mob:i18n:spelling',
+                    'command' => 'medooch:i18n:spelling',
                 );
 
                 $greetInput = new ArrayInput($arguments);
@@ -73,9 +73,7 @@ class TranslationsGeneratorCommand extends I18nCommand
         }
 
         $this->kernel = $this->getContainer()->get('kernel');
-        if (!$this->getContainer()->hasParameter('generator.translator')) {
-            throw new \Exception('The translations generator is not configured.');
-        }
+        $this->checkConfiguration();
 
         /**
          * Get the source and targets locales
