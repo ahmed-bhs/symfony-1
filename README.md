@@ -51,8 +51,47 @@ Installation:
     add "medooch/symfony:dev-master" to your composer.json and execute composer update or open your terminal and execute
     
     composer require medooch/symfony:dev-master
-    
-1- Extending AbstractKernel:
+
+###Optional:
+If you want to use the hole libraries and bundles of this packages, just extend the \Medooch\Components\Kernel\AbstractKernel
+
+1. Extending AbstractKernel:
+
+        // Your app/AppKernel should look like:
+        <?php
+        
+        use Symfony\Component\Config\Loader\LoaderInterface;
+        
+        class AppKernel extends \Medooch\Components\Kernel\AbstractKernel
+        {
+            public function registerBundles()
+            {
+                $bundles = parent::registerBundles();
+        
+                return $bundles;
+            }
+        
+            public function getRootDir()
+            {
+                return __DIR__;
+            }
+        
+            public function getCacheDir()
+            {
+                return dirname(__DIR__).'/var/cache/'.$this->getEnvironment();
+            }
+        
+            public function getLogDir()
+            {
+                return dirname(__DIR__).'/var/logs';
+            }
+        
+            public function registerContainerConfiguration(LoaderInterface $loader)
+            {
+                $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+            }
+        }
+
      
 Usage
 ----
