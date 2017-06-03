@@ -3,10 +3,8 @@
   "description": "Symfony 3.3 optionals plugins and bundles",
   "type": "library",
   "require": {
-    "php": "7.1.1",
-    "symfony/symfony": "3.3",
-    "liip/imagine-bundle": "^1.8",
-    "petkopara/crud-generator-bundle": "^3.0",
+    "php": ">=5.5.9",
+    "symfony/symfony": "3.1.*",
     "stichoza/google-translate-php": "3.2"
   },
   "license": "proprietary",
