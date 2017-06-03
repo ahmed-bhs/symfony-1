@@ -4,6 +4,7 @@
  */
 
 namespace Medooch\Bundles\ExportBundle\Command;
+
 use Medooch\Components\Helper\Yml\YamlManipulator;
 use Sensio\Bundle\GeneratorBundle\Command\AutoComplete\EntitiesAutoCompleter;
 use Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineCrudCommand;
@@ -123,7 +124,8 @@ class EntityConfiguratorCommand extends GenerateDoctrineCrudCommand
         }
         $fields = [];
         foreach ($metadata->fieldMappings as $field => $fieldMapping) {
-            $fields[] = 'e.' . $field;
+            if (in_array($fieldMapping['type'], ['string', 'integer', 'boolean']))
+                $fields[] = 'e.' . $field;
         }
         if (!array_key_exists(strtolower($entity), $parameters['export']['entities'])) {
             $parameters['export']['entities'][strtolower($entity)]['class'] = $this->entityClass;
